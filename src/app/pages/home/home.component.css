@@ -1,0 +1,32 @@
+.home-page {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  div {
+    background-color: rgb(240, 239, 239);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    color: rgb(54, 54, 54);
+
+    padding: 0.5rem;
+    border-radius: 5px;
+
+    select {
+      font-size: 1rem;
+      font-weight: 600;
+      background-color: rgb(255, 255, 255);
+      padding: 0.2rem;
+      border-radius: 5px;
+    }
+  }
+}
+
+#bar-container {
+  margin-top: 2rem;
+  background-color: white !important;
+}

@@ -1,0 +1,28 @@
+<main class="home-page">
+  <section class="select-container" *ngIf="pageLoaded">
+    <div>
+      Category
+      <select name="categoria" id="categoria" (change)="onCategoriaChange($event)">
+        <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
+      </select>
+    </div>
+
+    <div>
+      Product
+      <select name="product" id="product" (change)="onProductChange($event)">
+        <option *ngFor="let product of products" [value]="product.id">{{ product.name }}</option>
+      </select>
+    </div>
+
+    <div>
+      Brand
+      <select name="brand" id="brand" (change)="onBrandChange($event)">
+        <option *ngFor="let brand of brands" [value]="brand.id">{{ brand.name }}</option>
+      </select>
+    </div>
+  </section>
+
+  <main id="bar-container" *ngIf="sales.length > 0">
+    <app-bar [sales]="sales"></app-bar>
+  </main>
+</main>

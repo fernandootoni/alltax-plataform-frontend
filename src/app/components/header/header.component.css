@@ -1,0 +1,33 @@
+.header-container {
+  background-color: rgb(120, 161, 214);
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  color: white;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  div, h2 {
+    background-color: inherit;
+
+  }
+}
+
+.user-container {
+  display: flex; 
+  gap: 1rem; 
+  align-items: center;
+  background-color: inherit;
+
+
+  img {
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
+  }
+
+  div {
+    background-color: inherit;
+  }
+}
